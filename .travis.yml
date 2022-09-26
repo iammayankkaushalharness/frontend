@@ -1,15 +1,15 @@
-language: generic
+# language: generic
 
-sudo : required
-services:
-  - docker
+# sudo : required
+# services:
+#   - docker
 
 
-before_install:
-  - docker build -t iamthemayankkaushal/front-end -f Dockerfile.dev
+# before_install:
+#   - docker build -t iamthemayankkaushal/front-end -f Dockerfile.dev
 
-script:
-  - docker run -e CI=true iamthemayankkaushal/front-end npm run test  
+# script:
+#   - docker run -e CI=true iamthemayankkaushal/front-end npm run test  
 
 
 
